@@ -59,10 +59,10 @@ z = str(3.0)  # z will be '3.0'
 #acessing string as array
 a = "Hello, World!"
 print(a[1])
-print(b[2:5]) #slice the string from position 2 to 5 (not included)
-print(b[:5])  #slice from the start
-print(b[2:])  #slice to the end
-print(b[-5:-2]) #negative indexing
+print(a[2:5]) #slice the string from position 2 to 5 (not included)
+print(a[:5])  #slice from the start
+print(a[2:])  #slice to the end
+print(a[-5:-2]) #negative indexing
 print(len(a)) #length of an array
 #looping through an array
 for x in "python":
@@ -83,3 +83,19 @@ print(a.split(","))  #splits based on the seperator
 age = 23
 txt = f"My name is Bhudevi, I am {age}"
 print(txt)
+
+#LISTS - stores different types of data type values, ordered, changeable, allow duplicate values
+mylist = ["apple", "banana", "cherry"]
+mylist.insert(1, "watermelon") #insert new items without replacing any value
+print(type(mylist))
+#using list() constructor to create list
+thislist = list(("apple", "banana", "cherry", "orange", "kiwi", "mango")) # note the double round-brackets
+thislist[1] = "blackcurrant" #change value of a specific item
+thislist[1:3] = ["blackcurrant", "watermelon"]  #change range of item values
+thislist.append("orange")  #add an item at the end of the list
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical) #append one list to another list
+print(thislist)
